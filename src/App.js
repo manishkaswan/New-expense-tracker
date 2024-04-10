@@ -7,9 +7,9 @@ import Login from './components/login/Login';
 
 function App() {
   return (
-    <Fragment>
+    <>
       <Login></Login>
-    </Fragment>
+    </>
   );
 }
 
