@@ -2,12 +2,13 @@
 import React, { Fragment } from 'react';
 
 import './App.css';
-import LoginFormPrint from './components/login/LoginFormPrint';
+import SignUpFormPrint from './components/Signup/SignUpFormPrint';
+import Login from './components/login/Login';
 
 function App() {
   return (
     <Fragment>
-      <LoginFormPrint/>
+      <Login></Login>
     </Fragment>
   );
 }
