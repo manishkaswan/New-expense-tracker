@@ -12,8 +12,8 @@ const SignUpForm = () => {
     const confirmPasswordvalue=confirmPasswordRef.current.value
     if(confirmPasswordvalue!==passwordValue)
     {
-      alert("confirm password and password doest match")
-return
+      alert("confirm password and password doesn't match")
+return;
     }
     const myobj = {
       email: emailRef.current.value,
