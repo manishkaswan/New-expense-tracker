@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import LogOutButton from "../LogOut/LogOut";
+import ExpenseForm from "../expense/ExpenseForm";
+import ExpensePrint from "../expense/ExpensePrint";
 
 const Welcome = () => {
   const verifyEmailHandler = () => {
     fetch(
-      "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDNb4smayxCQ2Fx1fRPC9g6VJjCwWiDC60",
+      "https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=AIzaSyDNb4smayxCQ2Fx1fRPC9g6VJjCwWiDC60",
       {
         method: "POST",
         body: JSON.stringify({
@@ -41,6 +43,9 @@ const Welcome = () => {
       <hr></hr>
       <button onClick={verifyEmailHandler}>verify email</button>
       <LogOutButton></LogOutButton>
+
+      <ExpenseForm></ExpenseForm>
+      <ExpensePrint></ExpensePrint>
     </div>
   );
 };
